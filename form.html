@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            padding: 1px;
+            
+        }
+        .color{
+            background-color: color-mix(in srgb, rgb(111, 7, 7) 10%, rgb(7, 245, 7) 15%);
+            border-radius: 20px;
+        }
+        button{
+            border-radius: 60px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="color">
+        <form action="https://google.com/" method="get" class="form">
+            <legend>Name</legend>
+            <input type="text" name="name" placeholder="Enter Name"><br>
+            <legend>Email</legend>
+            <input type="email" name="email" placeholder="abc123@gmail.com"><br>
+            <legend>Password</legend>
+            <input type="password" name="passwd" placeholder="Enter Password"><br>
+            <legend>Choose the Gender</legend>
+            <label><input type="radio" name="male">Male</label><br>
+            <label><input type="radio" name="female">Female</label><br>
+            <label><input type="radio" name="others">Others</label><br>
+            <legend>Choose your favourite Subject</legend>
+            <label><input type="checkbox" name="sub">DSA</label><br>
+            <label><input type="checkbox" name="sub">Java</label><br>
+            <label><input type="checkbox" name="sub">ML</label><br>
+            <label><input type="checkbox" name="sub">Full Stack</label><br>
+            <label>Date</label>
+            <input type="date" name="date"><br>
+            <label>Choose your File</label>
+            <input type="file" name="file"><br>
+            <legend>Choose your favourite color</legend>
+            <input type="color" name="color">
+            <legend>Reset the form</legend>
+            <input type="reset" name="reset"><br>
+            <input type="range" name="range"><br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+</body>
+</html>

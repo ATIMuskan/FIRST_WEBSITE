@@ -11,26 +11,92 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="logo">
-            <img src="apnii.png" alt="apniUniversity">
+    <!-- navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="apnii.png" alt="apniUniversity">
+            </div>
+            <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+           <div class="navbaritems">
+                <ul>
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#">About</a></li>
+                    <li class="item"><a href="#">Services</a></li>
+                    <li class="item"><a href="#">Guides</a></li>
+                    <li class="item"><a href="#">Contact </a></li>
+                    <li class="item"><a href="#">Log In</a></li>
+                </ul>
+           </div>
+        </nav>
+    </header>
+    <!-- login-register -->
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+            <h1 class="h-primary center">Login</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i> </span>
+                    <input type="password" required>
+                    <label >Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label >
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="button">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Sing Up</a></p>
+                </div>
+            </form>
         </div>
-       <div class="navbaritems">
-            <ul>
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#">Services</a></li>
-                <li class="item"><a href="#">Guides</a></li>
-                <li class="item"><a href="#">Contact </a></li>
-                <li class="item"><a href="#">Log In</a></li>
-            </ul>
-       </div>
-    </nav>
+        <div class="form-box register">
+            <h1 class="h-primary center">Register</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required>
+                    <label >username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i> </span>
+                    <input type="password" required>
+                    <label >Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label >
+                        <input type="checkbox">agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="button">Register</button>
+                <div class="login-register">
+                    <p>Already have a account?
+                        <a href="#" class="Login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- quote -->
     <section id="home">
-        <h1 class="h-primary">GURUKUL</h1>
+        <h1 class="h-primary">LinkInsighter</h1>
         <p>The Path to Success</p><br>
         <button class="btn" type="submit"><a href="form.html">Join Now</a></button>
     </section>
+    <!-- Our services  -->
     <section class="services-container">
         <div class="text">
             <h2>Our Services</h2>
@@ -58,42 +124,23 @@
             </div>
         </div>
     </section>
+    <!-- tutor container -->
+  <section id="tutor-container">
+    <h1 class="h-primary ">Became a tutor</h1>
+    <div id="tutor">
+        <div class="tutor-item">
+            <img src="bn.jpg" width="70%">
+    </div>
+    </div>
+  </section>
+  <!-- About us -->
     <section id="about-container">
         <h1 class="h-primary center">About Us</h1>
         <div id="about">
             <div class="about-item">
                 <img src="bg.jpeg" widht="70%">
             </div>
-            <p class="para">Welcome to Gurukul,an online leaarning platform.We are dedicated to providing high-quality education and empowering individuals to reach their full potential.With a team of experienced educators and innovative technology,we offer a wide range of courses and resources to help students excel in their academic journey.Whether you are a student seeking additional support or an adult looking to enhance your skills,gurukul is here to guid you towards success.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" name="name" id="email" placeholder="Enter your Email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone No:</label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter your PhoneNo">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="name" id="subject" placeholder="Enter your subject">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btn">submit</button>
-                
-            </form>
+            <p class="para">Welcome to linkinsighter,an online leaarning platform.We are dedicated to providing high-quality education and empowering individuals to reach their full potential.With a team of experienced educators and innovative technology,we offer a wide range of courses and resources to help students excel in their academic journey.Whether you are a student seeking additional support or an adult looking to enhance your skills,linkinsighter is here to guid you towards success.</p>
         </div>
     </section>
 <!--footer-->
@@ -143,6 +190,7 @@
 <p>Copyright & copy;www.gurukul.com.All rights reserved!</p>
 </div>
 </section>
+<script  type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
